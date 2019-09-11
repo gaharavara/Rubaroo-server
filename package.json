@@ -1,0 +1,12 @@
+{
+  "name": "basic-server",
+  "version": "1.0.0",
+  "description": "A template for a node server",
+  "main": "node index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhishek Kumar Singh",
+  "license": "ISC"
+}
