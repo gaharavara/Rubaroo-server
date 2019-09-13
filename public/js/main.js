@@ -16,20 +16,32 @@ $(function() {
       }
     });
     
+    document.getElementById("home-link").onclick = function(){
+      $.scrollify.move("#home"); 
+     };
+     document.getElementById("menu-home").onclick = function(){
+      $.scrollify.move("#home"); 
+    };
     document.getElementById("about-us-link").onclick = function(){
       $.scrollify.move("#about-us");
-    };  
-    document.getElementById("home-link").onclick = function(){
-        $.scrollify.move("#home"); 
-    };     
+    }; 
+    document.getElementById("menu-about-us").onclick = function(){
+      $.scrollify.move("#about-us");
+    };       
     document.getElementById("contact-us-link").onclick = function(){
         $.scrollify.move("#contact-us");
+    };
+    document.getElementById("menu-contact-us").onclick = function(){
+      $.scrollify.move("#contact-us");
     };  
-    document.getElementById("register-link").onclick = function(){
+    document.getElementById("menu-register").onclick = function(){
         $.scrollify.move("#register");
     };
     document.getElementById("container").onclick = function() {
         $.scrollify.move("#register");
+    };
+    document.getElementById("menu-events").onclick = function(){
+      $.scrollify.move("#events");
     };
     document.getElementById("events-link").onclick = function(){
         $.scrollify.move("#events");
