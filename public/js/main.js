@@ -37,7 +37,7 @@ $(function() {
     document.getElementById("menu-register").onclick = function(){
         $.scrollify.move("#register");
     };
-    document.getElementById("container").onclick = function() {
+    document.getElementById("register-link").onclick = function() {
         $.scrollify.move("#register");
     };
     document.getElementById("menu-events").onclick = function(){
