@@ -11,23 +11,50 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4A9x0LSscb8LCa48LY5FUCiM65RvtacA&library=places"
+    type="text/javascript"></script>
 </head>
 
 <body>
+    <div id="rubaroo-logo">
+        <img src="static/rubaroo-logo.png" width="120px" height="100px">
+    </div>   
     <div id="nav">
     </div>
     <div id="menu-container">
     <div id="menu">
-        <div class="home"><a href="">Home</a></div>
-                <div class="about-us"><a href="">About Us</a></div>
-                <div class="past-exp"><a href="">Past Experiences</a></div>
-                <div class="blogs"><a href="">Blog</a></div>
-                <div class="timeline"><a href="">Event</a></div>
-                                <div class="reach-me"><a href="">Timeline</a></div>
-        <div class="sponsor-us"><a href="">Sponsor Us</a></div>
+        <div class="home"><a href="#">Home</a></div>
+                <div class="about-us"><a href="#">About Us</a></div>
+                <div class="past-exp"><a href="#">Past Experiences</a></div>
+                <div class="blogs"><a href="#">Blog</a></div>
+                <div class="timeline"><a href="#">Event</a></div>
+                                <div class="reach-me"><a href="#">Timeline</a></div>
+        <div class="sponsor-us"><a href="#">Sponsor Us</a></div>
+        <div id="social-media-nav">
+                <a href="https://www.facebook.com/rubaroo.srm/">
+                <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#">
+                <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                <i class="fab fa-linkedin"></i>
+                </a>    
+            </div>
     </div>
-    </div>    
+    </div>
+    <div id="permalink">
+        <ul>
+        <li id="home-link">Home</li>
+        <li id="about-us-link">About Us</li>
+        <li id="contact-us-link">Contact Us</li>
+        <li id="register-link">Register</li>
+        <li id="events-link">Events</li>
+        </ul>   
+     </div>       
     <div id="social-media">
                 <a href="https://www.facebook.com/rubaroo.srm/">
                 <i class="fab fa-facebook"></i>
@@ -43,11 +70,10 @@
                 </a>    
             </div>
     <div id="logo"></div>
-    <div id="fullpage">
-        <section>
+        <section id="home" class="section" data-section-name="home">
             <div id="particles-js"></div> 
             <div id="intro">
-                <h1>Rubaroo</h1>
+                <h1>Rubaroo'19</h1>
                 <p>We don't remember events by dates but by moments, as moments are forever.
                     Sharing moments is a paradox of now or never.
                     Throwback to one of the most enthralling star night of RUBAROO’18 that drove the audience crazy and created an ambience of excitement and fun. Stay tuned for more!</p>
@@ -63,28 +89,69 @@
             <div class="dropdown"></div>
             <div class="dropdown drop2"></div>
         </section>
-        <section>
+        <section id="about-us"class="section" data-section-name="about-us">
             <h1>About Us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at lacinia eros. Aliquam erat volutpat. Suspendisse potenti. Phasellus gravida maximus ex. Ut facilisis nisi sit amet ex aliquam posuere. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vitae neque ac ante vehicula tincidunt. Aliquam aliquam neque ac est venenatis, nec facilisis libero rutrum. Nunc eget dolor ante. Suspendisse lacinia at nisl et dignissim. Nulla interdum accumsan urna, ultrices egestas quam suscipit non. Mauris eu dolor suscipit massa volutpat venenatis et at erat.
-<br>
-Mauris volutpat felis odio, quis condimentum sapien vestibulum tempor. Nunc porttitor dui in leo iaculis hendrerit. Nullam vel facilisis mauris, mollis interdum justo. Praesent efficitur elit molestie vehicula rhoncus. Duis bibendum vestibulum urna fringilla elementum. Fusce sed tristique est. Cras sit amet lectus eget nunc gravida aliquam. Morbi tellus turpis, vehicula nec vehicula eu, congue eget orci. Sed consequat facilisis eros. Quisque consequat in diam ut posuere. Praesent id imperdiet risus. Vestibulum fermentum sodales ante, vitae pulvinar mi facilisis non. Aenean eget ex turpis. Donec cursus consequat purus, sit amet imperdiet ipsum auctor id. Mauris bibendum eget dui eu gravida.</p>
+            <p>
+                    Rubaroo, the cultural extravaganza is not merely a fest but a platform to stand out from the rest and let your inner self out. It is an occasion to let bonds build, to let every individual evolve, to create memories and cherish every moment.
+                    <br><br>
+                    Every year Rubaroo seeks to create an everlasting experience for everyone, then be it its events, fun events or pro nights. With artists like Bohe-mia, Tochi Rana, Javed Ali, Eka Band, Euphoria Band, Indian Ocean Vh1 supersonic, Sunburn, Darshan Raval who have already graced this festival with their mind boggling performances, this year we are back again with an upgraded level of excitement and thrill.<br><br>
+                    Being held on the 27th and 28th of September, RUBAROO’19 is all set to blow your minds. From fashion to drama, dance to music, fun events to literary events, every part of this festival ensures to create a mesmerizing impression on your minds. 
+            </p>
         </section>
-        <section>
-            <h1>Reach Us</h1>
+        <section id="events" class="section" data-section-name="events">
+            <h1>Flag Events</h1>
+            <div class="carousel">
+                    <img src="static/flag-events/Der Riez.jpg" alt="Der Riez" />
+                    <img src="static/flag-events/Halla Bola.jpg" alt="Halla Bola" />
+                    <img src="static/flag-events/Ho Revo.jpg" alt="Ho Revo" />
+                    <img src="static/flag-events/Music Mantra.jpg" alt="Music Mantra" />
+                    <img src="static/flag-events/Show Off.jpg" alt="Show Off" />
+                    <img src="static/flag-events/Stomp the yard.jpg" alt="Stomp the yard" />
+                    <img src="static/flag-events/Symphony.jpg" alt="Symphony" />
+                    <img src="static/flag-events/Vadyantram.jpg" alt="Vadyantram" />
+                  </div>        
         </section>
-        <section>
-            <h1>Section4</h1>
+        <section id="register" class="section" data-section-name="register">
+                <div id="internal-register">
+                        <h1>A SRMite ?<h1>
+                           <h1> Internal Registration</h1>
+                        <div id="internal-button" class="button-reg button-7">
+                                <div class="dub-arrow"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt=">>" /></div>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScubhnL--kXS6vKb9zuqXdujltI-GN-k1G1sxrAjytYrYv19Q/viewform">Let's Go!</a>
+                              </div>
+                 </div>
+                 <div id="external-register">
+                        <h1>External Registration</h1>
+                        <div id="external-button" class="button-reg button-7">
+                                <div class="dub-arrow"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt=">>" /></div>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTQwwPxzWbXqxHnv50Rw46iKnGZ2V_a02oExDQ1N_bhyIH5A/viewform">Let's Go!</a>
+                              </div>
+                 </div>
+                  </div>      
+            </section>
+            <section id="contact-us" class="section" data-section-name="contact-us">
+                    <div class="mapouter" id="map-location">
+                        <div class="gmap_canvas">
+                            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=SRM%20institute%20of%20science%20and%20technology%20modinagar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div id="contact-info">
+                        <h1>Feel free to REACH US at</h1>
+                    </div>    
         </section>
-        <section>
-            <h1>Section5</h1>
-        </section>
-    </div>
+        <section id="credits" class="section" data-section-name="credits">
+            <h1>BACK TO TOP</h1>
+        </section>   
+    <!--</div>-->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src='js/jquery.fullpage.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
     <script src='js/main.js'></script>
-
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
