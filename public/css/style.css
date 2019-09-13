@@ -20,6 +20,13 @@ a:visited {
     z-index: 4;
 }
 
+#srm-logo {
+    position: fixed;
+    top: -11px;
+    right: 60px;
+    z-index: 4;
+}
+
 #nav {
     position: fixed;
     z-index: 8;
