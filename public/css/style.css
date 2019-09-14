@@ -184,7 +184,7 @@ section h1 {
 }
 
 #home {
-    background: url('../static/home5.jpg') no-repeat center center fixed;
+    background: url('../static/home-page.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -350,6 +350,12 @@ section:nth-child(3) h1 {
     padding-left: 5%;
 }
 
+#register p {
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 1%;   
+}
+
 #internal-button {
     position: absolute;
     bottom: 0;
@@ -365,7 +371,7 @@ section:nth-child(3) h1 {
     width: 30%;
     height: 80%;
     color: white;
-    border:solid white 3px;
+    border:solid white 4px;
     border-radius: 2%;
     transition: all .5s ease-in;
 }
@@ -377,15 +383,25 @@ section:nth-child(3) h1 {
     height: 82%; 
 }
 
+#external-registration-contact {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+#external-registration-contact:hover {
+    font-weight: bold;
+}
+
 #external-button {
     position: absolute;
     bottom: 0;
 }
 
 #events {
-  background: #1d4350; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1d4350, #a43931); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1d4350, #a43931);
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #events-head {

@@ -10,7 +10,7 @@ $(function() {
       },
       after: function(){
         current = $.scrollify.current();
-        current.addClass('permalink-active')
+        // current.addClass('permalink-active')
       }
     });
     
@@ -31,7 +31,11 @@ $(function() {
     };
     document.getElementById("menu-contact-us").onclick = function(){
       $.scrollify.move("#contact-us");
-    };  
+    };
+    document.getElementById("external-registration-contact").onclick = function(){
+      $.scrollify.move("#contact-us");
+    };
+    
     document.getElementById("menu-register").onclick = function(){
         $.scrollify.move("#register");
     };
