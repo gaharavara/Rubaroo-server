@@ -91,14 +91,14 @@ a:visited {
 }
 
 #menu-container {
-    display: none;
+    display: block;
     position: fixed;
-    left: 73%;
-    right: 0%;
+    width: 0;
+    right: 0;
     height: 100vh;
     z-index: 7;
     background: rgba(0,0,0,0.8);
-    transition: 2s ease-in;
+    transition: .5s linear;
 }
 
 #menu {
@@ -112,13 +112,15 @@ a:visited {
     background:rgba(0,0,0,0);
 }
 
-#menu div {
+#menu .menu-transition {  
+    width: 200px;
+    height: 50px;
     color: white;
     cursor: pointer;
     transition: all 0.5s ease-out;
 }
 
-#menu div:hover {
+#menu .menu-transition:hover {
     margin-left: 20px;
     color: #ec9a29;
     text-decoration: underline;
@@ -128,7 +130,9 @@ a:visited {
 
 #social-media-nav {
     position: relative;
-    top: 70px;
+    top: 205px;
+    width: 150px !important;
+    height: 45px;
     letter-spacing: 0.04em;
     text-decoration: none !important;
 

@@ -37,6 +37,9 @@ $(function() {
     document.getElementById("menu-register").onclick = function(){
         $.scrollify.move("#register");
     };
+    document.getElementById("container").onclick = function(){
+      $.scrollify.move("#register");
+    }  
     document.getElementById("register-link").onclick = function() {
         $.scrollify.move("#register");
     };
@@ -55,13 +58,13 @@ var nav_flag = true;
 document.getElementById("nav").onclick = function(){
     if(nav_flag===true){
     nav_flag = false;
-    document.getElementById("menu-container").style.display="block";   
+    document.getElementById("menu-container").style.width="400px";   
     document.getElementById("nav").style.background="none";
     document.getElementById("nav").innerHTML = "X";
     $("#nav").addClass("nav-clicked");
     } else {
-        nav_flag = true;
-    document.getElementById("menu-container").style.display="none";   
+    nav_flag = true;  
+    document.getElementById("menu-container").style.width="0px";
     document.getElementById("nav").innerHTML = ""; document.getElementById("nav").style.background="url('./static/menu.png')";
 
     }
