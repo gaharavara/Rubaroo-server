@@ -101,7 +101,7 @@ a:visited {
     background: rgba(0,0,0,0.8); /* fallback for old browsers */
     background: -webkit-linear-gradient(to right,rgba(0,0,0,0.8), rgba(67, 67, 67, 0.8)); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, rgba(0,0,0,0.8), #434343);
-    transition: .5s linear;
+    transition: .3s linear;
 }
 
 #menu {
@@ -292,7 +292,7 @@ left: 20%;
 
 #contact-info {
     position: relative;
-    top: -55%;
+    top: -52%;
     left: 50%;
     width: 90%;
     height: 80%;
@@ -306,14 +306,26 @@ left: 20%;
     font-size: 2em;
 }
 
-section:nth-child(3) h1 {
+.contact-badge {
     position: relative;
-    top: 10%;
-    left: 20%;
- font-family: '';
- font-size: 70px;
- line-height: 100px;
+    margin-left: 5%;
+    margin-top: 1%;  
+    width: 500px;
+    height: 100px;;
+    padding-top: 1%; 
+    padding-bottom: 1%;
+}
+.contact-badge i {
+    padding-left: 5%;
+    padding-left: 5%; 
+    font-size: 4em;
+}
 
+.contact-text {
+    position: absolute;
+    top: -9%;
+    left: 20%;
+    padding-bottom: 6%;  
 }
 
 #register {
