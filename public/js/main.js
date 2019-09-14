@@ -10,8 +10,6 @@ $(function() {
       },
       after: function(){
         current = $.scrollify.current();
-        //alert(current);
-        console.log(current);
         current.addClass('permalink-active')
       }
     });
@@ -49,8 +47,12 @@ $(function() {
     document.getElementById("events-link").onclick = function(){
         $.scrollify.move("#events");
     };
-  // alert("done");
-
+    document.getElementById("site-map-link").onclick = function(){
+      $.scrollify.move("#site-map"); 
+     };
+     document.getElementById("menu-site-map").onclick = function(){
+      $.scrollify.move("#site-map");
+     }; 
   });
 
 var nav_flag = true;

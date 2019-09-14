@@ -72,7 +72,7 @@ a:visited {
     font-weight: bold;
 }
 
-#permalink ul li .permalink-active {
+.permalink-active {
     font-weight: bold !important;
 }
 
@@ -98,6 +98,9 @@ a:visited {
     height: 100vh;
     z-index: 7;
     background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.8); /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,rgba(0,0,0,0.8), rgba(67, 67, 67, 0.8)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(0,0,0,0.8), #434343);
     transition: .5s linear;
 }
 
@@ -380,12 +383,47 @@ section:nth-child(3) h1 {
 }
 
 #events {
-    background: gray;
+  background: #1d4350; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1d4350, #a43931); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1d4350, #a43931);
+}
+
+#events-head {
+    position: relative;
+    left: 1%;
+    margin-left: 130px;
+    width: 200px;
+    top: 2%;
+    padding-left: 2%;
+    height: 100px;
+    border-left: white 2px solid;
+    color: white; 
+}
+
+.events-list-permalink ul {
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.events-list-permalink {
+    position: relative;
+    top: 17%;
+    left: 85%;
+    width: 15%;
+    z-index: 5;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white; 
+    border-left: white 2.3px solid;
+    background-color: rgba(224, 224, 224, 0.3);
+
 }
 
 .carousel {
     position: relative;
-    top: 30%;
+    top: -20%;
     left: 0%;
     z-index: 4;
     margin: 0 auto;
@@ -400,11 +438,13 @@ section:nth-child(3) h1 {
     cursor: pointer; /* not needed if you wrap carousel items in links */
   }
 
-  .events-list {
+    .events-list {
       color: white;
       background: rgba(0,0,0,0.8);
   }
 
-#credits {
+#site-map {
+    position: relative;
+    z-index: 6;
     background: #F25457;
 }
