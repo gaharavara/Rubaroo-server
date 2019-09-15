@@ -66,6 +66,9 @@ $(function() {
     document.getElementById("menu-events").onclick = function(){
       $.scrollify.move("#events");
     };
+    document.getElementById("site-events").onclick = function(){
+      $.scrollify.move("#events");
+    };
     document.getElementById("events-link").onclick = function(){
         $.scrollify.move("#events");
     };
