@@ -131,6 +131,7 @@ a:visited {
     margin-left: 20px;
     color: #ec9a29;
     font-weight: bold;
+    text-decoration: underline;
     transition: margin-left .5s, color .5s;
 }
 
@@ -275,13 +276,14 @@ left: 20%;
 }
 
 #contact-us {
+    position: relative;
     background:linear-gradient(135deg, #55db15, #459ffc);
     color: #fff;
     
 }
 
 #map-location {
-    position: relative;
+    position: absolute;
     top: 20%;
     left: 20%;
     right: 10%;
@@ -289,13 +291,13 @@ left: 20%;
 }
 
 #gmap_canvas{
-    width: 400px;
-    height: 500px;
+    width: 60vh;
+    height: 60vh;
 }
 
 #contact-info {
-    position: relative;
-    top: -52%;
+    position: absolute;
+    top: 14%;
     left: 50%;
     width: 90%;
     height: 80%;
@@ -304,9 +306,14 @@ left: 20%;
 }
 
 #contact-info h1{
-    padding-top: 3%;
+    padding-top: 1.8%;
     padding-left: 5%;
     font-size: 2em;
+}
+
+#contact-info h4 {
+    font-size: .8em !important;
+    padding-left: 5% !important; 
 }
 
 .contact-badge {
@@ -317,7 +324,13 @@ left: 20%;
     height: 100px;;
     padding-top: 1%; 
     padding-bottom: 1%;
+    transition: all .2s linear; 
 }
+
+.contact-badge:hover {
+    margin-left: 6%; 
+}
+
 .contact-badge i {
     padding-left: 5%;
     padding-left: 5%; 
@@ -328,7 +341,15 @@ left: 20%;
     position: absolute;
     top: -9%;
     left: 20%;
-    padding-bottom: 6%;  
+    padding-bottom: 3%;  
+}
+
+#contact-mail {
+    position: absolute;
+    bottom: -1%; 
+    left: 0;
+    right: 0%;
+    padding-left: 5%;
 }
 
 #register {
@@ -414,15 +435,18 @@ left: 20%;
 }
 
 #events {
+    position: relative;
     background: #FF512F;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #events-head {
-    position: relative;
+    position: absolute;
     text-align: center;
     top: 2%;
+    left: 0%;
+    right: 0%;
     padding-left: 2%;
     color: white; 
 }
@@ -435,8 +459,8 @@ left: 20%;
 }
 
 .events-list-permalink {
-    position: relative;
-    top: 17%;
+    position: absolute;
+    top: 25%;
     left: 85%;
     width: 15%;
     z-index: 5;
@@ -449,26 +473,26 @@ left: 20%;
 }
 
 .carousel {
-    position: relative;
-    top: -20%;
+    position: absolute;
+    top: 30%;
     left: 0%;
-    z-index: 4;
+    z-index: 3;
     margin: 0 auto;
     width: 500px;
     height: 300px;
     display: relative;
   }
   .carousel img {
-      width: 800px;
-      height: 600px;
-    display: hidden; /* hide images until carousel prepares them */
-    cursor: pointer; /* not needed if you wrap carousel items in links */
-  }
+        width: 800px;
+        height: 600px;
+        display: hidden; /* hide images until carousel prepares them */
+        cursor: pointer; /* not needed if you wrap carousel items in links */
+   }
 
-    .events-list {
-      color: white;
-      background: rgba(0,0,0,0.8);
-  }
+.events-list {
+    color: white;
+    background: rgba(0,0,0,0.8);
+}
 
 #site-map {
     position: relative;
