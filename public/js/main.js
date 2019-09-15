@@ -23,6 +23,9 @@ $(function() {
      document.getElementById("menu-home").onclick = function(){
       $.scrollify.move("#home"); 
     };
+    document.getElementById("site-rubaroo-logo").onclick = function(){
+      $.scrollify.move("#home"); 
+    };    
     document.getElementById("site-home").onclick = function(){
       $.scrollify.move("#home"); 
      };    

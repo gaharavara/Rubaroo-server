@@ -525,6 +525,10 @@ left: 20%;
     margin-right: auto; 
 }
 
+.rubaroo-logo:hover {
+    cursor: pointer;
+}
+
 .site-links {
     position: absolute;
     top: 30%;
