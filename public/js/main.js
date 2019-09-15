@@ -77,6 +77,9 @@ $(function() {
      }; 
   });
 
+var cc = document.getElementById("copyrights");
+console.log(cc.innerHTML);
+
 var nav_flag = true;
 // Navigation bar
 document.getElementById("nav").onclick = function(){

@@ -682,7 +682,8 @@
   
   })(jQuery);
   
-  
+  var cc = document.getElementById("copyrights");
+  console.log(cc.innerHTML);
   
   $(document).ready(function() {
     var carousel = $('.carousel').waterwheelCarousel();
