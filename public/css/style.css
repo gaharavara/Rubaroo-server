@@ -130,14 +130,13 @@ a:visited {
 #menu .menu-transition:hover {
     margin-left: 20px;
     color: #ec9a29;
-    text-decoration: underline;
     font-weight: bold;
     transition: margin-left .5s, color .5s;
 }
 
 #social-media-nav {
     position: relative;
-    top: 195px;
+    top: 100px;
     width: 150px !important;
     height: 45px;
     letter-spacing: 0.04em;
@@ -422,13 +421,9 @@ left: 20%;
 
 #events-head {
     position: relative;
-    left: 1%;
-    margin-left: 130px;
-    width: 200px;
+    text-align: center;
     top: 2%;
     padding-left: 2%;
-    height: 100px;
-    border-left: white 2px solid;
     color: white; 
 }
 
