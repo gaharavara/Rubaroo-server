@@ -20,6 +20,10 @@ a:visited {
     z-index: 4;
 }
 
+#rubaroo-logo:hover{
+    cursor: pointer;
+}
+
 #srm-logo {
     position: fixed;
     top: -11px;
@@ -475,4 +479,61 @@ left: 20%;
     position: relative;
     z-index: 6;
     background: #F25457;
+}
+
+.site-map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.rubaroo-logo {
+    text-align: center;
+    position: relative;
+    color: white;
+    top: 11%;
+}
+
+.rubaroo-logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.site-links {
+    position: absolute;
+    top: 30%;
+    bottom: 4%;
+    left: 0;
+    right: 50%;
+}
+
+.site-links h2 {
+    padding-top: 10%; 
+    padding-left: 30%;
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
+
+.site-links div {
+    padding-left: 30%; 
+    padding-top: 1%;
+    color: white;
+}
+
+.site-links div:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.social-media-links {
+    left: 50%;
+    right: 0%;
 }

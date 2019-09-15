@@ -16,14 +16,23 @@ $(function() {
     
     document.getElementById("home-link").onclick = function(){
       $.scrollify.move("#home"); 
-     };
+     };   
+     document.getElementById("rubaroo-logo").onclick = function(){
+      $.scrollify.move("#home"); 
+     }; 
      document.getElementById("menu-home").onclick = function(){
       $.scrollify.move("#home"); 
     };
+    document.getElementById("site-home").onclick = function(){
+      $.scrollify.move("#home"); 
+     };    
     document.getElementById("about-us-link").onclick = function(){
       $.scrollify.move("#about-us");
     }; 
     document.getElementById("menu-about-us").onclick = function(){
+      $.scrollify.move("#about-us");
+    };
+    document.getElementById("site-about-us").onclick = function(){
       $.scrollify.move("#about-us");
     };       
     document.getElementById("contact-us-link").onclick = function(){
@@ -32,6 +41,9 @@ $(function() {
     document.getElementById("menu-contact-us").onclick = function(){
       $.scrollify.move("#contact-us");
     };
+    document.getElementById("site-contact-us").onclick = function(){
+      $.scrollify.move("#contact-us");
+    };    
     document.getElementById("external-registration-contact").onclick = function(){
       $.scrollify.move("#contact-us");
     };
@@ -39,6 +51,9 @@ $(function() {
     document.getElementById("menu-register").onclick = function(){
         $.scrollify.move("#register");
     };
+    document.getElementById("site-register").onclick = function(){
+      $.scrollify.move("#register");
+    };    
     document.getElementById("container").onclick = function(){
       $.scrollify.move("#register");
     }  
