@@ -560,3 +560,112 @@ left: 20%;
     left: 50%;
     right: 0%;
 }
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 960px) and (min-width: 360px){
+
+    #srm-logo {
+        display: none;
+    }
+
+    #permalink {
+        display: none;
+    }
+
+    #intro h1{
+        font-size: 2em;
+        padding-top: 34%; 
+    }
+
+   section #container {
+        left: 26vw;
+    }
+
+
+
+
+
+    #about-us h1 {
+        top: 12%;
+        font-size: 2.3em;
+    }
+
+    #about-us p {
+        top: 14%;
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+
+
+    #events-head {
+        left: 7%;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .events-list-permalink {
+        left: 10%;
+        width: 80%;
+    }
+
+    .events-list-permalink li {
+        padding-bottom: 3%; 
+    }
+
+
+
+    .mobile {
+        display: block;
+    }
+
+    #register h1 {
+        font-size: .8em;
+    }
+
+    #register p {
+        font-size: .8em !important;
+    }
+
+    #mobile-register-head {
+        position: absolute;
+        padding: 0;
+        left: 37%;
+        font-size: 1.7em;
+        padding-top: 4%;
+        color: white; 
+    }
+
+    #internal-register {
+        top: 20%;
+        left: 1%;
+        width: 49vw;
+        height: 70%;
+        border:solid white 2px;
+    }
+    
+    .button-reg {
+        width: 100px !important;
+    }
+    
+    #external-register {
+        top: -50%;
+        width: 45vw;
+        height: 70%;
+        border: solid white 2px;
+    }
+
+    .desktop-br {
+        display: none;
+    }
+
+    #external-register div {
+        font-size: .8em;
+    }
+
+}
