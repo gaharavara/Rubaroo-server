@@ -14,10 +14,18 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Rubaroo'19 | The Annual Cultural fest of SRMIST">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:description" content="Rubaroo'19 ">
+    <meta property="og:site_name" content="Rubaroo'19 | The Annual Cultural fest of SRMIST">
+    <meta name="description" content="Rubaroo'19">
+    <link rel="icon" href="./rubaroo-logo.ico" type="image/x-icon">
     <title>Rubaroo</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/simple-slider.css">
     <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/particles.css">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
@@ -46,7 +54,7 @@
             <div id="menu-events" class="menu-transition">Events</div>
             <div id="menu-register" class="menu-transition">Register</div>
             <div id="menu-contact-us" class="menu-transition">Contact Us</div>
-            <div id="menu-sponsors" class="menu-transition">Sponsors</div>
+            <div id="menu-sponsors" class="menu-transition">Sponsor Us</div>
             <div id="menu-site-map" class="menu-transition">Site Map</div>
             <div id="social-media-nav">
                 <a target="_blank" href="https://www.facebook.com/rubaroo.srm/">
@@ -80,7 +88,7 @@
             <i class="fab fa-youtube"></i>
         </a>
     </div>
-    <div id="share-fb" data-href="http://srmrubaroo.com/#home" data-layout="button_count" data-size="small">
+    <div id="share-fb" class="rounded-button" data-href="http://srmrubaroo.com/#home" data-layout="button_count" data-size="small">
         <a target="_blank"
             href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2srmrubaroo.com%2F%23home&amp;src=sdkpreparse">SHARE</a>
     </div>
@@ -121,19 +129,19 @@
         </p>
     </section>
     <section id="events" class="section" data-section-name="events">
-        <div id="events-head">
+        <div id="events-head" class="section-head">
             <h1>Flag Events</h1>
         </div>
         <div class="events-list-permalink">
             <ul>
                 <li>Der Riez</li>
-                <li>Halla Bola</li>
+                <li>Halla Bol</li>
                 <li>Ho Revo</li>
                 <li>Music Mantra</li>
                 <li>Show Off</li>
-                <li>Stomp the yard</li>
-                <li>Symphony</li>
-            </ul>
+                <li>Stomp The Yard</li>
+                <li>Symphony Of The Phoenix</li>
+            </ul>    
         </div>
         <div class="carousel">
             <img src="static/flag-events/Der-Riez.jpg" alt="Der Riez" />
@@ -145,6 +153,7 @@
             <img src="static/flag-events/Symphony.jpg" alt="Symphony" />
             <img src="static/flag-events/Vadyantram.jpg" alt="Vadyantram" />
         </div>
+        <div id="event-brochure"class="rounded-button"><a target="_blank" href="https://drive.google.com/file/d/15NUpMlFzNd4hvjTsjIOWsiLeivJFn-Z7/view?usp=drivesdk">BROCHURE</a></div>
     </section>
     <!--
     <section class="section events-list">
@@ -171,7 +180,20 @@
     <section class="section events-list">
         Vadyantram
     </section>
--->
+--> 
+    <section id="pronight" class="section" data-section-name="pronight">
+            <div class="particles-js"></div>
+            <div class="section-head">
+                <h1>PRONIGHT HIGHLIGHTS</h1>
+            </div>
+            <div id="pronight-slider">
+                <div class="carousel">
+                    <img src="static/nikhil-dsouza.jpeg" alt="Der Riez" />
+                    <img src="static/light-ear-band.jpeg" alt="Halla Bola" />
+                </div>                     
+            </div>
+    </section>
+
     <section id="register" class="section" data-section-name="register">
         <div id="mobile-register-head" class="mobile"><h1>Registration</h1></div>
         <div id="internal-register">
@@ -294,9 +316,9 @@
             <div id="site-about-us">About Us</div>
             <div id="site-events">Events</div>
             <div id="site-register">Register</div>
-            <div id="site-accomodationr">Accomodation</div>
+            <div id="site-accomodation">Accomodation</div>
             <div id="site-contact-us">Contact Us</div>
-            <div id="site-sponsors">Sponsors</div>
+            <div id="site-sponsors">Sponsor Us</div>
             </div>
             <div class="site-links social-media-links">
                 <h2>SOCIAL MEDIA</h2>
@@ -304,7 +326,7 @@
                 <div><a target="_blank" href="https://instagram.com/rubaroo.srm?igshid=e36er3gdso2k">Instagram</a></div>
                 <div><a target="_blank" href="https://www.youtube.com/channel/UCCnyIl8GsbuP2IYdl_S597Q">Youtube</a></div>
             </div>
-            <div id="copyrights"><h4> &#9400; Rubaroo 2019 | <a href="https://github.com/gaharavara?tab=repositories">gaharavara</a></h4></div>    
+            <div id="copyrights"><h4> &#9400; SRMIST 2019 <!--| <a href="https://github.com/gaharavara/Rubaroo-server/blob/master/LICENSE"gaharavara</a>--></h4></div>    
         <div>    
     </section>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -312,8 +334,12 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.js"></script>
-    <script src='js/main.js'></script>
+    <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider-min.js"></script>
+    -->
+    <script src="js/simple-slider.js"></script>
 </body>
 
 </html>

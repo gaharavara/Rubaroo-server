@@ -44,6 +44,12 @@ $(function() {
     document.getElementById("menu-contact-us").onclick = function(){
       $.scrollify.move("#contact-us");
     };
+    document.getElementById("menu-sponsors").onclick = function() {
+      $.scrollify.move("#contact-us");
+    }
+    document.getElementById("site-sponsors").onclick = function() {
+      $.scrollify.move("#contact-us");
+    }    
     document.getElementById("site-contact-us").onclick = function(){
       $.scrollify.move("#contact-us");
     };    
@@ -55,6 +61,9 @@ $(function() {
         $.scrollify.move("#register");
     };
     document.getElementById("site-register").onclick = function(){
+      $.scrollify.move("#register");
+    };
+    document.getElementById("site-accomodation").onclick = function(){
       $.scrollify.move("#register");
     };    
     document.getElementById("container").onclick = function(){

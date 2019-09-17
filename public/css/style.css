@@ -84,7 +84,7 @@ a:visited {
     font-weight: bold !important;
 }
 
-#share-fb {
+.rounded-button {
     position: absolute;
     z-index: 4;
     bottom: 3%;
@@ -235,7 +235,7 @@ section #container {
     transition: all 0.5s ease-out;
 }
 
-#social-media a:hover{
+#social-media a:hover {
     color: gray;
 }
 
@@ -255,9 +255,12 @@ section #container {
 }
 
 #about-us {
-    background: #eb7070;
     color: white;
     justify-content: center;
+    background: #e53935;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 #about-us h1 {
@@ -295,7 +298,7 @@ left: 20%;
     
 }
 
-#gmap_canvas{
+#gmap_canvas {
     width: 60vh;
     height: 60vh;
 }
@@ -446,7 +449,7 @@ left: 20%;
     background: linear-gradient(to bottom, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#events-head {
+.section-head {
     position: absolute;
     text-align: center;
     top: 2%;
@@ -487,17 +490,63 @@ left: 20%;
     height: 300px;
     display: relative;
   }
-  .carousel img {
+
+.carousel img {
         width: 800px;
         height: 600px;
         display: hidden; /* hide images until carousel prepares them */
         cursor: pointer; /* not needed if you wrap carousel items in links */
-   }
+}
+
+#event-brochure {
+    padding: 0.4% 2%;
+    font-size: .8em;
+    color: white; 
+}
+
+#event-brochure:hover {
+    cursor: pointer;
+}
 
 .events-list {
     color: white;
     background: rgba(0,0,0,0.8);
 }
+
+#pronight {
+   position: relative;
+   background: url('../static/pro-night.jpg') no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+#pronight::before {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba( 0, 0, 0, .4);
+}
+
+
+#pronight .section-head {
+    z-index: 3;
+}
+
+#pronight-slider {
+    position: absolute;
+    margin-top: 2%;
+    left: 5%;
+    height: 90vh;
+    right: 5%;
+    color: #2a2a2a;
+    background: rgba(0,0,0,0);
+  }
 
 #site-map {
     position: relative;
@@ -536,6 +585,7 @@ left: 20%;
 
 .site-links {
     position: absolute;
+    z-index: 2;
     top: 30%;
     bottom: 4%;
     left: 0;
@@ -669,6 +719,15 @@ left: 20%;
         padding-bottom: .2%; 
     }
 
+    #pronight .section-head {
+        top: 80%;
+        font-size: .9em;
+    }
+
+    #pronight-slider .carousel img{
+        width: 350px;
+        height: 300px;
+    }
 
 
     .mobile {
@@ -784,11 +843,13 @@ left: 20%;
     }
 
     .social-media-links {
+        z-index: 2;
         left: 45%;
         right: 5%;
     }
 
     #copyrights {
+        z-index: 1;
         font-size: .8em;
     }
 
