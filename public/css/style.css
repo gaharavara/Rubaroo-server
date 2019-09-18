@@ -502,6 +502,7 @@ left: 20%;
     padding: 0.4% 2%;
     font-size: .8em;
     color: white; 
+    z-index: 4;
 }
 
 #event-brochure:hover {
