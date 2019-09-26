@@ -574,8 +574,8 @@ left: 20%;
     top: 11%;
 }
 
-.rubaroo-logo img {
-    display: block;
+.rubaroo-logo div {
+    display: inline-block;
     margin-left: auto;
     margin-right: auto; 
 }
@@ -583,6 +583,21 @@ left: 20%;
 .rubaroo-logo:hover {
     cursor: pointer;
 }
+
+
+#site-map-thomso img {
+    display: inline-block;
+    margin-left: 5%;
+    width : 250px !important;
+    height : 170px;
+}
+
+#site-map-rubaroo img {
+    display: inline-block;
+    width : 170px;
+    height : 150px;   
+}
+
 
 .site-links {
     position: absolute;
@@ -849,6 +864,18 @@ left: 20%;
         right: 5%;
     }
 
+    #site-map-thomso img {
+        display: inline-block;
+        width : 170px !important;
+        height : 115px;
+    }
+    
+    #site-map-rubaroo img {
+        display: inline-block;
+        width : 115px;
+        height : 100px;   
+    }
+    
     #copyrights {
         z-index: 1;
         font-size: .8em;

@@ -23,7 +23,7 @@ $(function() {
      document.getElementById("menu-home").onclick = function(){
       $.scrollify.move("#home"); 
     };
-    document.getElementById("site-rubaroo-logo").onclick = function(){
+    document.getElementById("site-map-rubaroo").onclick = function(){
       $.scrollify.move("#home"); 
     };    
     document.getElementById("site-home").onclick = function(){
