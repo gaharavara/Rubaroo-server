@@ -44,9 +44,9 @@ $(function() {
     document.getElementById("menu-contact-us").onclick = function(){
       $.scrollify.move("#contact-us");
     };
-    document.getElementById("menu-sponsors").onclick = function() {
-      $.scrollify.move("#contact-us");
-    }
+   // document.getElementById("menu-sponsors").onclick = function() {
+   //   $.scrollify.move("#contact-us");
+   // }
     document.getElementById("site-sponsors").onclick = function() {
       $.scrollify.move("#contact-us");
     }    
