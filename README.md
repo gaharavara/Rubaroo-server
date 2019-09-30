@@ -11,6 +11,7 @@ The site is hosted at https://srmrubaroo.in
  
  Demo of the desktop version
  
+ ![](rubaroo-demo.gif)
  
  Demo of the mobile version
  
