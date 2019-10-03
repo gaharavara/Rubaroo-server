@@ -18,4 +18,6 @@ The site is hosted at https://srmrubaroo.in
  
  
  
- 
+ Rubaroo Google Analytics Report
+
+![](analytics-rubaroo.jpg)
